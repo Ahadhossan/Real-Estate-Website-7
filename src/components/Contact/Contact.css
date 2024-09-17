@@ -1,0 +1,91 @@
+.c-container {
+  justify-content: space-between;
+}
+
+.c-container > div {
+  flex: 1;
+}
+.c-left {
+  gap: 0.5rem;
+}
+
+.contactModes {
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.contactModes .row {
+  gap: 1.5rem;
+}
+
+.mode {
+  width: 16rem;
+  padding: 1rem;
+  border: 0.8px solid rgba(128, 128, 128, 0.143);
+  border-radius: 5px;
+  gap: 1rem;
+  transition: all 0.3s ease-in;
+}
+
+.mode:hover {
+  scale: 1.1;
+  box-shadow: var(--shadow);
+}
+
+.mode .button {
+  width: 100%;
+  background: var(--lightBlue);
+  color: var(--blue);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.mode .button:hover {
+  background: var(--blue-gradient);
+  color: #fff;
+  scale: 0.8;
+}
+
+.mode > :nth-child(1) {
+  width: 100%;
+  gap: 1.6rem;
+}
+
+.mode .detail .primaryText {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.icon {
+  padding: 10px;
+  background: #eeeeff;
+  border-radius: 5px;
+}
+
+.c-right {
+  width: 100%;
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+  .c-container {
+    flex-direction: column;
+  }
+
+  .contactModes {
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mode {
+    width: 100%;
+  }
+
+  .c-right {
+        justify-content: center;
+    }
+}
